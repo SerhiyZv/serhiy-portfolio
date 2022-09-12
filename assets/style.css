@@ -1,0 +1,486 @@
+/* CSS variable declarations */
+:root {
+    --headerbox: rgb(80 15 175);
+    --fontandmain: #fff;
+    --background: #ab91c9;
+    --body-font: 'Merriweather', serif;
+    --heading-font: 'Times New Roman', serif;
+}
+
+body {
+    background-color: var(--background);
+}
+
+/* Headings font declaration */
+h1,h2,h3 {
+    font-family: 'Shippori Mincho B1', serif;
+}
+
+/* H2 size declaration */
+h2 {
+    font-size: 250%;
+}
+
+.header {
+    padding-right: 0px;
+    padding-bottom: 55px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #839fe6;
+    color: #f3d00a;
+    background: linear-gradient(180deg,#839fe6, var(--background));
+}
+
+.header h1 {
+    background-color: var(--headerbox);
+    padding: 30px;
+    border-radius: 0 3px 3px 0;
+    max-width: 400PX;
+    width: 100%;
+    display: inline-block;
+    font-size: 40px;
+    font-family: var(--heading-font);
+}
+
+.header h1 .zved {
+    color: #08ca69;
+}
+
+header .tagline {
+    color: var(--fontandmain);
+    padding-top: 15px;
+
+}
+
+.header nav {
+    margin-right: 20px;
+    padding-top: 30px;
+    float: right;
+    font-family: var(--heading-font);
+    font-size: 20px;
+}
+
+
+/* Setting styles and transition on link class and overwriting anchor text native styles */
+nav .link,
+nav .link a {
+    color: rgb(43, 5, 5);
+    cursor: pointer;
+    font-family: var(--heading-font);
+    font-size: 23px;
+    text-decoration: underline;
+    transition: color 0.25s ease-in-out;
+}
+
+/* Setting hover effects for nav list item "links" */
+nav .link:hover,
+nav .link:hover a {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.road {
+    position: relative;
+    text-align: center;
+    color: var(--fontandmain);
+  }
+
+  /* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    color: var(--fontandmain);
+    font-size: 200%;
+    font-style: italic;
+    text-shadow: 2px 2px blueviolet;
+}
+
+
+/* My photo styles */
+main .myphoto {
+    margin-bottom: 20px;
+    border: 8px solid rgb(233, 233, 152);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+}
+
+/* About Me card H2 styles */
+main .content-about-me h2 {
+    color: var(--fontandmain);
+    width: auto;
+}
+
+/* END Header styles */
+
+/* Main content styles */
+main {
+    padding: 20px 50px 0 50px;
+    background: linear-gradient(90deg, var(--background), #4770da);
+    height: 100%;
+    margin: -10px 0 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* About Me card (myphoto and H2) styles */
+main .content-about-me {
+    display: grid;
+    grid-template: auto / 250px auto;
+    justify-items: start;
+    column-gap: 30px;
+    align-items: end;
+    margin: -10px auto 0px auto;
+    max-width: 1000px;
+    width: 100%;
+    padding-left: 20px;
+}
+
+main .content-about-me h2 {
+    padding-bottom: 20px;
+    font-size: 200%;
+    color: var(--fontandmain);
+    width: auto;
+    font-family: var(--heading-font);
+}
+
+/* Container styles for gray card behind About Me*/
+main .gray-card {
+    background-color: #454545;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* About Me heading styles */
+main .gray-card h3 {
+    font-size: 150%;
+    color: var(--fontandmain);
+    margin-bottom: 5px;
+    font-family: var(--body-font);
+}
+
+/* About Me paragraph styles */
+main .gray-card p {
+    color: var(--fontandmain);
+    font-size: 110%;
+    margin-bottom: 25px;
+    font-family: var(--body-font);
+}
+
+/* Split skills lists */
+main .gray-card #skills span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Selected Work H2 styles */
+main h2.work {
+    max-width: 1000px;
+    width: 100%;
+    margin: 40px auto 20px auto;
+    font-size: 200%;
+}
+
+/* Work samples grid styles */
+main .work-grid {
+    display: grid;
+    justify-content: center;
+    grid-template: repeat(3, auto) / 475px 475px;
+    column-gap: 50px;
+    row-gap: 50px;
+    padding-bottom: 60px;
+}
+
+/* Makes featured sample span both columns */
+main .work-grid #workfeatured {
+    grid-column: 1 / span 2;
+}
+
+/* Styles for card in each row */
+main .card {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+}
+
+/* Styles for each work sample screenshot */
+main .card img {
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 100%;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+/* Shadow effect for work sample screenshots when user hovers over image */
+main .card img:hover {
+    box-shadow: inset 0px 0px 8px 
+    rgb(255, 255, 255), 
+    0 0 30px 
+    rgba(255, 255, 255, 1);
+}
+
+/* Styles for text area beneath screenshot */
+main .card-text {
+    padding: 10px 25px 25px;
+    font-family: var(--body-font);
+}
+
+/* Project description styles */
+main .card-text p {
+    margin-bottom: 15px;
+}
+
+/* Special width for featured card description */
+main #workfeatured .card-text p {
+    max-width: 700px;
+}
+
+main .card-text h3 {
+    font-size: 150%;
+    margin-bottom: 15px;
+}
+
+main .card-text a {
+    font-size: 120%;
+    opacity: 100%;
+    transition: opacity 0.25s;
+    text-decoration: none;
+}
+
+main .card-text a:hover {
+    opacity: 50%;
+}
+
+main .card-text li {
+    padding-bottom: 5px;
+}
+/* END Main content styles */
+
+/* Footer styles */
+footer {
+    background-color: var(--purple-accent);
+    color: var(--fontandmain);
+}
+
+/* Footer H2 styles */
+footer h2 {
+    font-size: 200%;
+    max-width: 1270px;
+    width: 100%;
+    padding: 20px 0 0 30px;
+    margin: 0 auto 10px auto;
+}
+
+/* Footer contact info flexbox declaration + properties */
+footer .contact-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    margin: auto;
+    padding: 20px 20px;
+}
+
+/* Overwriting default font color for Footer anchor tags */
+footer .contact-info a {
+    color: var(--fontandmain);
+}
+
+/* Individual contact boxes styles */
+footer .contact-info div {
+    margin-top: 10px;
+    margin-right: 100px;
+    font-size: 130%;
+}
+
+/* Removing margin right on last contact box so that spacing only exists between boxes */
+footer .contact-info div:last-child {
+    margin-right: 0px;
+}
+
+/* Sets transition on contact box anchors tags and icons */
+footer .contact-info div a {
+    transition: color 0.25s;
+}
+
+/* Hover effect for contact box anchor tags and icons */
+footer .contact-info div:hover a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Start media queries */
+@media only screen and (max-width: 1120px) {
+    /* Adds top margin to separate from title card */
+    nav {
+        margin-top: 15px;
+        margin-left: 30px;
+    }
+
+    /* Reduces padding on sides of Main */
+    main {
+        padding: 65px 30px 0 30px;
+    }
+
+    main h2.work {
+        max-width: 750px;
+    }
+
+    main .work-grid {
+    display: grid;
+    justify-content: center;
+    grid-template: repeat(5, auto) / 750px;
+    column-gap: 50px;
+    row-gap: 50px;
+    padding: 0 0 60px;
+    }
+
+    main .work-grid #workfeatured {
+    grid-column: 1 / span 1;
+    } 
+
+    /* Centers Footer H2 */
+    footer h2 {
+        text-align: center;
+        padding-left: 0;
+    }
+        
+    /* Sets contact boxes to column and centers boxes */
+    footer .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Margin correction */
+    footer .contact-info div {
+        margin-right: 0px;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    main .work-grid {
+        grid-template-columns: auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    /* Adds top margin to nav list to separate from first row after flex wrap */
+    nav .link {
+        padding-top: 10px;
+    }
+    
+    /* Removes side padding on Main */
+    main {
+        padding: 65px 0 0;
+    }
+
+    /* Adjusts About Me grid to one column layout */
+    main .content-about-me {
+        grid-template: auto auto / 250px;
+        justify-content: center;
+        justify-items: center;
+        margin-bottom: 20px;
+        margin-top: -50px;
+        padding-left: 0;
+    }
+
+    /* Adds top margin now that H2 is positioned beneath myphoto */
+    main .content-about-me h2 {
+        margin-top: 20px;
+        color: #000;
+    }
+
+    /* Removes border rounding now that container stretches to both sides of viewport */
+    main .gray-card {
+        border-radius: 0px;
+    }
+
+    /* Adds padding around work samples grid to keep columns from spanning entire viewport */
+    main .content-work {
+        padding: 0 30px;
+    }
+
+    /* Keeps H2 aligned with Selected Works grid */
+    main h2.work {
+        max-width: 100%;
+    }    
+}
+
+@media only screen and (max-width: 575px) {
+    main .content-about-me {
+        margin-top: -40px;
+    }
+
+    /* Reduces headshot size for smaller screens */
+    main .content-about-me .myphoto {
+        max-width: 200px;
+    }
+
+    /* Reduces font size for smaller screens */
+    main .content-about-me h2 {
+        font-size: 150%;
+    }
+
+    /* Reduces font size for smaller screens */
+    main h2.work {
+        font-size: 150%;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    /* Reduce negative margin on About Me grid to account for smaller banner */
+    main .content-about-me {
+        margin-top: -45px;
+    }
+
+    /* Reduces font-size on bio paragraphs */
+    main .gray-card p {
+        font-size: 100%;
+    }
+
+    main .content-work {
+        padding: 0 15px;
+    }
+
+    /* Centers H2 */
+    main h2.work {
+        text-align: center;
+    }
+
+    /* Sets Selected Works grid width to 100% of viewport -- removing fixed widths from earlier queries */
+    main .works-grid {
+        grid-template-columns: 100%;
+    }
+
+    /* Reduces font-size of contact info boxes and centers text */
+    footer .contact-info div {
+        font-size: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    /* Reduce offset on About Me grid to account for lower height of banner */
+    main .content-about-me {
+        margin-top: -30px;
+    }
+
+    /* Reduce headshot size for smaller screens */
+    main .cnontent-about-me .myphoto {
+        max-width: 150px;
+    }
+}

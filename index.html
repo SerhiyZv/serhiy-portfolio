@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serhiy Zvedenyuk portfolio</title>
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+    <!-- Header flexbox for intro and nav links -->
+    <header class="header">
+        <h1>Serhiy<span class="zved"> Zved</span>enyuk</h1>
+        <!-- Navigation links for scrollCursor event listeners -->
+        <nav>
+            <ul>
+            <li class="link scroll-link"> <a href="#about-me">About Me </a></li>
+            <li class="link scroll-link"> <a href="#work">Works</a></li>
+            <li class="link scroll-link"><a href="#contact-me">Contact Me</a></li>
+            <li class="link"><a href="resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="road">
+        <img src="assets/images/road.jpg" alt="road before mountains" style="width:100%;">
+        <div class="bottom-right">Stop doubting yourself, work hard, and make it happen.</div>
+    </div>
+    <!-- Main for About me and work samples -->
+    <main>
+        <section>
+            <!-- About Me intro card (grid) -->
+            <div class="content-about-me" id="about-me">
+                <img src="./assets/images/my photo.jpg"  class="myphoto" alt="Profile photo"/>    
+                <h2>About Me</h2>
+            </div>
+            <div class="gray-card">
+                <h3>My Skills</h3>
+                <p id="skills">
+                    <span>
+                        <u>Languages</u>: JavaScript, CSS, HTML
+                    </span>
+                        <u>Tools</u>: Node, GitHub, Visual Code, Visual Studio
+                </p>
+                <h3>My Story</h3>
+                <p>
+                    Since I was a young child, I have always had an obsession with mountains and travelling.
+                    Mountains exist to challenge us in different periods of our life.
+                    You realize there is nowhere better to go hiking.
+                    It is great exercise; the variety of terrain and the climbing angles cannot be replicated anywhere else.
+                    You do not need to be an expert mountaineer to experience these exercise benefits- 
+                    it can be as challenging as you want it to be. Building a web application
+                    is the same as climbing in the mountains. In a world of mediocre designs and unresponsive layouts,
+                    I strive for excellence in both presentation and functionality, 
+                    climbing higher and higher and seeing how beautiful is the virtual world.
+                </p>
+                <p>
+                    My content as an engineer also allows me to appreciate 
+                    the difference between effective and flat imagination 
+                    and practical usage, and I apply this knowledge to site 
+                    design and functionality. The gap between good and bad UX 
+                    is almost as subjective as the bridge between good and bad blueprints,  
+                    but both have core principles and conventions that we should all follow.  
+                    As an engineer and burgeoning web developer,  I aim to meet usability, 
+                    SEO and mobile standards in every application and then deliver 
+                    compelling content so that site and display work hand in hand to meet objectives and drive results. 
+                </p>
+            </div>
+        </section>
+        <!-- Work Samples grid -->
+        <section class="content-work" id="work">
+            <h2 class="work">My Work</h2>
+             <!-- Row 1 (on desktop) - Card 1 -->
+            <div class="work-grid">
+                <div class="card" id="workfeatured">
+                    <a rel="noopener" href="https://serhiyzv.github.io/prework-study-guide/" target="_blank">
+                        <picture>
+                            <source srcset="./assets/images/Preworkapp-1000px.jpg" media="(max-width: 477px)">
+                            <source srcset="./assets/images/Preworkapp-1000px.jpg" media="(max-width: 528px)">
+                            <source srcset="./assets/images/Preworkapp-1000px.jpg" media="(max-width: 677px)">
+                            <source srcset="./assets/images/Preworkapp-1000px.jpg" media="(max-width: 1120px)">
+                            <img src="./assets/images/Preworkapp-1000px.jpg" alt="My first App Prework application">
+                        </picture>
+                    </a>
+                    <div class="card-text">
+                    <h3>Prework application</h3>
+                    <p>
+                        Because of the challenging nature of this program, 
+                        I want to come ready to sprint on day one. 
+                        It help me to prepare, I've completed this module to be ready before my first day.
+                         This prework projec provided me the information about preliminary skills and information that I need to know before begin the course. 
+                         It also gave me a glimpse of what's to come.
+                    </p>
+                    <ul class="link-list">
+                        <li><a rel="noopener" href="https://github.com/SerhiyZv/prework-study-guide" target="_blank">GitHub</a></li>
+                        <li><a rel="noopener" href="https://serhiyzv.github.io/prework-study-guide/" target="_blank"></i>Live Application</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <!-- Row 2 - Card 1 -->
+                <div class="card">
+                    <a rel="noopener" href="https://github.com/SerhiyZv/mini-pro-week-2" target="_blank">
+                        <picture>
+                            <source srcset="./assets/images/mini-project-CSS-400px.jpg" media="(max-width: 477px)">
+                            <source srcset="./assets/images/mini-project-CSS-450px.jpg" media="(max-width: 528px)">
+                            <source srcset="./assets/images/mini-project-CSS-600px.jpg" media="(max-width: 677px)">
+                            <source srcset="./assets/images/mini-project-CSS-750px.jpg" media="(max-width: 1120px)">
+                            <img src="./assets/images/mini-project-CSS-500px.jpg" alt="Mini Project CSS ">
+                        </picture>
+                    </a>
+                    <div class="card-text">
+                        <h3>Mini Project CSS</h3>
+                        <p>Mini Project CSS snippet Cheatsheet</p>
+                        <ul class="link-list">
+                            <li><a rel="noopener" href="https://github.com/SerhiyZv/mini-pro-week-2" target="_blank">GitHub</a></li>
+                            <li><a rel="noopener" href="https://serhiyzv.github.io/mini-pro-week-2/" target="_blank">Live Application</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Row 2 - Card 2 -->
+                <div class="card">
+                    <a rel="noopener" href="https://github.com/SerhiyZv/challenge_week_one" target="_blank">
+                        <picture>
+                            <source srcset="./assets/images/Challenge-week-one-400px.jpg" media="(max-width: 477px)">
+                            <source srcset="./assets/images/Challenge-week-one-450px.jpg" media="(max-width: 528px)">
+                            <source srcset="./assets/images/Challenge-week-one-600px.jpg" media="(max-width: 677px)">
+                            <source srcset="./assets/images/Challenge-week-one-750px.jpg" media="(max-width: 1120px)">
+                            <img src="./assets/images/Challenge-week-one-500px.jpg" alt="Challenge-week-one">
+                        </picture>
+                    </a>
+                    <div class="card-text">
+                        <h3>Challenge-week-one</h3>
+                        <p>
+                            In this project, I replace non-semantic elements with semantic elemets, 
+                            and a semantic element clearly describes its meaning to both the browser and the developer. 
+                            Add an alt attribute to the images and icons to make a website to be accessible. 
+                            Changed the title element to concise and descriptive to help search engine to find a website. </p>
+                        <ul class="link-list">
+                            <li><a rel="noopener" href="https://github.com/SerhiyZv/challenge_week_one" target="_blank">GitHub</a></li>
+                            <li><a rel="noopener" href="https://serhiyzv.github.io/challenge_week_one/" target="_blank">Live Application</a></li>
+                        </ul>
+                    </div>
+                </div> 
+                <!-- Row 3 - Card 1 -->
+                <div class="card">
+                    <a rel="noopener" href="https://studio.code.org/projects/applab/jEt6jhAH8cJ9wTzp4j3VFWGaBabI2OMBOIxwEiKdwZI" target="_blank">
+                        <picture>
+                            <source srcset="./assets/images/quiz-app-400px.jpg" media="(max-width: 477px)">
+                            <source srcset="./assets/images/quiz-app-450px.jpg" media="(max-width: 528px)">
+                            <source srcset="./assets/images/quiz-app-600px.jpg" media="(max-width: 677px)">
+                            <source srcset="./assets/images/quiz-app-750px.jpg" media="(max-width: 1120px)">
+                            <img src="./assets/images/quiz-app-500px.jpg" alt="Quiz Design application">
+                        </picture>
+                    </a>
+                    <div class="card-text">
+                        <h3>Quiz design application</h3>
+                        <p>Quiz design application </p>
+                        <ul class="link-list">
+                            <li><a rel="noopener" href="https://studio.code.org/projects/applab/jEt6jhAH8cJ9wTzp4j3VFWGaBabI2OMBOIxwEiKdwZI" target="_blank">GitHub</a></li>
+                            <li><a rel="noopener" href="https://studio.code.org/projects/applab/jEt6jhAH8cJ9wTzp4j3VFWGaBabI2OMBOIxwEiKdwZI" target="_blank">Live Application</a></li>
+                        </ul>
+                    </div>
+                </div>  
+                <!-- Row 3 - Card 2 -->
+                <div class="card">
+                    <a rel="noopener" href="https://www.theweathernetwork.com/ca/weather/ontario/mississauga" target="_blank">
+                        <picture>
+                            <source srcset="./assets/images/wheather-app-400px.jpg" media="(max-width: 477px)">
+                            <source srcset="./assets/images/wheather-app-450px.jpg" media="(max-width: 528px)">
+                            <source srcset="./assets/images/wheather-app-600px.jpg" media="(max-width: 677px)">
+                            <source srcset="./assets/images/wheather-app-750px.jpg" media="(max-width: 1120px)">
+                            <img src="./assets/images/wheather-app-500px.jpg" alt="Quiz Design application">
+                        </picture>
+                    </a>
+                    <div class="card-text">
+                        <h3>Quiz design application</h3>
+                        <p>Quiz design application </p>
+                        <ul class="link-list">
+                            <li><a rel="noopener" href="https://www.theweathernetwork.com/ca/weather/ontario/mississauga" target="_blank">GitHub</a></li>
+                            <li><a rel="noopener" href="https://www.theweathernetwork.com/ca/weather/ontario/mississauga" target="_blank">Live Application</a></li>
+                        </ul>
+                    </div>
+                </div>   
+            </div>
+        </section>
+    </main>
+        <!-- Footer for contact information -->
+        <footer>
+            <h2 class="classcontact-me" id="contact me">Contact Me</h2>
+            <!-- Contact Info flexbox --> 
+            <section class="contact-info">
+                <!-- Phone block -->
+                <div id="phone">
+                    (647) 526-3807
+                </div>
+                
+                <!-- Email block -->
+                <div id="email">
+                    <a href="mailto:skiev31@gmail.com">skiev31@gmail.com</a>
+                </div>
+
+                <!-- GitHub block -->
+                <div id="github">
+                    <a rel="noopener" href="https://github.com/SerhiyZv" target="_blank">GitHub profile</a>
+                </div>
+
+                <!-- LinkedIn block -->
+                <div id="linkedin">
+                    <a rel="noopener" href="https://www.linkedin.com/" target="_blank">LinkedIn profile</a>
+                </div>
+            </section>
+        </footer>
+    
+</body>
+</html>
