@@ -15,3 +15,9 @@ CSS
 https://serhiyzv.github.io/serhiy-portfolio/
 
 ## Screenshots
+
+```md
+![alt text](assets/images/screenshot-1.jpg)
+```
+```md
+![alt text](assets/images/screenshot-2.jpg)
