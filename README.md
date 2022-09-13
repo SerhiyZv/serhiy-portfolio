@@ -1,6 +1,4 @@
-# serhiy-portfolio
-
-# my-portfolio
+# My portfolio
 
 
 ## Project Description
