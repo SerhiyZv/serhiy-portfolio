@@ -21,3 +21,4 @@ https://serhiyzv.github.io/serhiy-portfolio/
 ```
 ```md
 ![alt text](assets/images/screenshot-2.jpg)
+```
